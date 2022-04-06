@@ -17,6 +17,8 @@ header, footer, section{
   width: 100%;
 }
 
+/** Banner **/
+
 header {
   position: relative;
   height: 400px;
@@ -52,4 +54,22 @@ header video {
 
 #banner .col button a {
   text-decoration: none;
+}
+
+/** Cards **/
+
+.cardVideo {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.cardVideo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
 }
