@@ -77,6 +77,10 @@ header video {
   width: 100%;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 /** sections **/
 
 .sectionTitle {
