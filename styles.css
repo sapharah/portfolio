@@ -88,3 +88,13 @@ header video {
 section {
   padding: 50px 0;
 }
+
+#aboutMe {
+  background-color: #fc9003;
+}
+
+/** Footer **/
+
+footer {
+  text-align: center;
+}
