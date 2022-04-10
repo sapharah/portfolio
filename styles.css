@@ -49,7 +49,7 @@ header video {
   text-align: center;
 }
 
-#banner #leftBanner h1{
+#banner h1{
   font-size: 5em;
   line-height: 1.3em;
 }
@@ -66,9 +66,9 @@ header video {
 .bannerText {
   position: absolute;
   top: 50%;
-  left: 0;
   right: 0;
   transform: translateY(-50%);
+  width: 50%;
 }
 
 /** Cards **/
