@@ -31,19 +31,13 @@
       </div>
     </div>
   </header>
-  <section>
-    <video class="thevideo" loop preload="none">
-      <source src="media/cal_poly_pomona.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-    </video>     
-  </section>
   <section id="projects">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
             <div class="cardVideo">
-              <video class="thevideo" autoplay muted loop preload="none">
+              <video class="thevideo" muted loop preload="none">
                 <source src="media/neumann_univ.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>         
@@ -107,14 +101,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="text/javascript">
 
-  var figure = $(".video").hover( hoverVideo, hideVideo);
+  var figure = $(".thevideo").hover( hoverVideo, pauseVideo);
 
   function hoverVideo(e) {
-    $('video', this).get(0).play();
+    $('thevideo', this).get(0).play();
   }
 
-  function hideVideo(e) {
-    $('video', this).get(0).pause();
+  function pauseVideo(e) {
+    $('thevideo', this).get(0).pause();
   }
 </script>
 </body>
