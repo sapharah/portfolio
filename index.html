@@ -126,15 +126,16 @@
 
 <script type="text/javascript">
 
-  var figure = $(".thevideo").hover( hoverVideo, pauseVideo);
+$(document).ready(function(){
+  $(".theVideo").on("mouseover", function(event){
+    this.play();
+  }).on("mouseout", function(event){
+    this.pause();
+  });
 
-  function hoverVideo(e) {
-    $('video', this).get(0).play();
-  }
+});
 
-  function pauseVideo(e) {
-    $('video', this).get(0).pause();
-  }
+
 </script>
 </body>
 </html>
